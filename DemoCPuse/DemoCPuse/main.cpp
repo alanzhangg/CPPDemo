@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-
+#include "IncreDecreOverload.hpp"
 class Car{
 private:
 	std::string m_make;
@@ -29,13 +29,14 @@ bool operator!=(const Car &c1, const Car &c2){
 }
 
 int main(){
-	Car corolla("Toyota", "Corolla");
-	Car camy("Toyota", "Camry");
-	if (corolla == camy) {
-		std::cout << "a Corolla and Camry are the same.\n";
-	}
-	if (corolla != camy) {
-		std::cout << "a Corolla and Camry are not the same.\n";
-	}
-	return 0;
+    Digit digit(8);
+    
+    std::cout << digit;
+    std::cout << ++digit; // calls Digit::operator++();
+    std::cout << digit++; // calls Digit::operator++(int);
+    std::cout << digit;
+    std::cout << --digit; // calls Digit::operator--();
+    std::cout << digit--; // calls Digit::operator--(int);
+    std::cout << digit;
+    return 0;
 }
