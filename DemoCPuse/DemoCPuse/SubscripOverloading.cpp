@@ -7,3 +7,11 @@
 //
 
 #include "SubscripOverloading.hpp"
+
+int& IntList::operator[](const int index){
+	return m_list[index];
+}
+
+const int& IntList::operator[](const int index) const{
+	return m_list[index];
+}

@@ -9,6 +9,8 @@
 #include <iostream>
 #include <string>
 #include "IncreDecreOverload.hpp"
+#include "SubscripOverloading.hpp"
+
 class Car{
 private:
 	std::string m_make;
@@ -38,5 +40,20 @@ int main(){
     std::cout << --digit; // calls Digit::operator--();
     std::cout << digit--; // calls Digit::operator--(int);
     std::cout << digit;
+	
+	std::cout << std::endl;
+	
+	IntList list;
+	list[2] = 3;
+	std::cout << list[2];
+	const IntList clist;
+	std::cout << clist[2];
+	
+	IntList * lists = new IntList;
+	(*lists)[2] = 3;
+	std::cout << (*lists)[2] << '\n';
+	delete lists;
+	
+	std::cout << std::endl;
     return 0;
 }
