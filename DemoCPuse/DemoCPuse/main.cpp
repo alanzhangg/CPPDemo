@@ -10,6 +10,7 @@
 #include <string>
 #include "IncreDecreOverload.hpp"
 #include "SubscripOverloading.hpp"
+#include "ParenthesisOverloading.hpp"
 
 class Car{
 private:
@@ -54,6 +55,13 @@ int main(){
 	std::cout << (*lists)[2] << '\n';
 	delete lists;
 	
+	std::cout << "\n";
+	
+	Matrix matrix(1);
+	matrix(1, 2) = 4.5;
+	matrix();
+	std::cout << matrix(1, 2) << '\n';
+
 	std::cout << std::endl;
     return 0;
 }

@@ -11,6 +11,8 @@
 		2D0560EE1F3C57C30017D5A3 /* median.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0560DE1F3C40E40017D5A3 /* median.cpp */; };
 		2D0560EF1F3C57C30017D5A3 /* grade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0560E41F3C453A0017D5A3 /* grade.cpp */; };
 		2D06D89E1F55672A00251011 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D06D89C1F55672A00251011 /* Date.cpp */; };
+		2D0C7C671F592A7E0041BB00 /* ParenthesisOverloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C7C651F592A7E0041BB00 /* ParenthesisOverloading.cpp */; };
+		2DB0D8FC1F59433C000A8779 /* TypecastsOverloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */; };
 		2DF34DE91F429A0E003237BF /* split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF34DE71F429A0E003237BF /* split.cpp */; };
 		2DF5DC981F39B872001B1371 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5DC971F39B872001B1371 /* main.cpp */; };
 		D0726F9D1F584D64004D5E3E /* IncreDecreOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0726F9B1F584D64004D5E3E /* IncreDecreOverload.cpp */; };
@@ -38,6 +40,10 @@
 		2D0560E51F3C453A0017D5A3 /* grade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = grade.hpp; sourceTree = "<group>"; };
 		2D06D89C1F55672A00251011 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
 		2D06D89D1F55672A00251011 /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
+		2D0C7C651F592A7E0041BB00 /* ParenthesisOverloading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParenthesisOverloading.cpp; sourceTree = "<group>"; };
+		2D0C7C661F592A7E0041BB00 /* ParenthesisOverloading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParenthesisOverloading.hpp; sourceTree = "<group>"; };
+		2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypecastsOverloading.cpp; sourceTree = "<group>"; };
+		2DB0D8FB1F59433C000A8779 /* TypecastsOverloading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypecastsOverloading.hpp; sourceTree = "<group>"; };
 		2DF34DE71F429A0E003237BF /* split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = split.cpp; sourceTree = "<group>"; };
 		2DF34DE81F429A0E003237BF /* split.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = split.hpp; sourceTree = "<group>"; };
 		2DF5DC941F39B871001B1371 /* DemoCPuse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCPuse; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,10 @@
 				D0726F9C1F584D64004D5E3E /* IncreDecreOverload.hpp */,
 				D0726F9E1F5857A8004D5E3E /* SubscripOverloading.cpp */,
 				D0726F9F1F5857A8004D5E3E /* SubscripOverloading.hpp */,
+				2D0C7C651F592A7E0041BB00 /* ParenthesisOverloading.cpp */,
+				2D0C7C661F592A7E0041BB00 /* ParenthesisOverloading.hpp */,
+				2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */,
+				2DB0D8FB1F59433C000A8779 /* TypecastsOverloading.hpp */,
 			);
 			path = DemoCPuse;
 			sourceTree = "<group>";
@@ -159,10 +169,12 @@
 			files = (
 				2DF34DE91F429A0E003237BF /* split.cpp in Sources */,
 				D0726F9D1F584D64004D5E3E /* IncreDecreOverload.cpp in Sources */,
+				2D0C7C671F592A7E0041BB00 /* ParenthesisOverloading.cpp in Sources */,
 				2D0560ED1F3C57C30017D5A3 /* Student_info.cpp in Sources */,
 				2D0560EE1F3C57C30017D5A3 /* median.cpp in Sources */,
 				2D06D89E1F55672A00251011 /* Date.cpp in Sources */,
 				D0726FA01F5857A8004D5E3E /* SubscripOverloading.cpp in Sources */,
+				2DB0D8FC1F59433C000A8779 /* TypecastsOverloading.cpp in Sources */,
 				2D0560EF1F3C57C30017D5A3 /* grade.cpp in Sources */,
 				2DF5DC981F39B872001B1371 /* main.cpp in Sources */,
 			);
