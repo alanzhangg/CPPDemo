@@ -24,9 +24,20 @@ public:
 };
 
 template <class T, int size>
-
 T* StaticArray<T, size>::getArray(){
 	return m_array;
+}
+
+template <typename T, int size>
+void print(StaticArray<T, size> &array){
+	for (int count = 0; count < size; ++count)
+		std::cout << array[count] << ' ';
+}
+
+template <int size>
+void print(StaticArray<char, size> &array) {
+	for (int count = 0; count < size; ++count)
+		std::cout << array[count];
 }
 
 #endif /* StaticArray_hpp */
