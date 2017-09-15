@@ -102,6 +102,19 @@ int main() {
 	Base &base = derived;
 	std::cout << "Base is a" << base.getName() << '\n';
 	
+	using namespace std;
+	cout << "Enter your age" << endl;
+	int age;
+	cin >> age;
+	if (age <= 0)
+		{
+			// In this case we'll use the insertion operatior on cerr to print an error message
+		cerr << "Oops, you entered an invalid age!" << endl;
+		exit(1);
+		}
+	
+		// Otherwise we'll use insertion again on cout to print a result
+	cout << "You entered " << age << " years old" << endl;
 	return 0;
 }
 
