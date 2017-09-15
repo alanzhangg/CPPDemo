@@ -12,6 +12,10 @@
 		2D0560EF1F3C57C30017D5A3 /* grade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0560E41F3C453A0017D5A3 /* grade.cpp */; };
 		2D06D89E1F55672A00251011 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D06D89C1F55672A00251011 /* Date.cpp */; };
 		2D0C7C671F592A7E0041BB00 /* ParenthesisOverloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C7C651F592A7E0041BB00 /* ParenthesisOverloading.cpp */; };
+		2D4019451F6B7B76005AEA0F /* Cents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D4019431F6B7B76005AEA0F /* Cents.cpp */; };
+		2D4019481F6B850E005AEA0F /* ArrayTem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D4019461F6B850E005AEA0F /* ArrayTem.cpp */; };
+		2D40194B1F6BA78F005AEA0F /* StaticArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D4019491F6BA78F005AEA0F /* StaticArray.cpp */; };
+		2D40194E1F6BB4CF005AEA0F /* Storage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D40194C1F6BB4CF005AEA0F /* Storage.cpp */; };
 		2DB0D8FC1F59433C000A8779 /* TypecastsOverloading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */; };
 		2DF34DE91F429A0E003237BF /* split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF34DE71F429A0E003237BF /* split.cpp */; };
 		2DF5DC981F39B872001B1371 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5DC971F39B872001B1371 /* main.cpp */; };
@@ -42,6 +46,14 @@
 		2D06D89D1F55672A00251011 /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 		2D0C7C651F592A7E0041BB00 /* ParenthesisOverloading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParenthesisOverloading.cpp; sourceTree = "<group>"; };
 		2D0C7C661F592A7E0041BB00 /* ParenthesisOverloading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParenthesisOverloading.hpp; sourceTree = "<group>"; };
+		2D4019431F6B7B76005AEA0F /* Cents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cents.cpp; sourceTree = "<group>"; };
+		2D4019441F6B7B76005AEA0F /* Cents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cents.hpp; sourceTree = "<group>"; };
+		2D4019461F6B850E005AEA0F /* ArrayTem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTem.cpp; sourceTree = "<group>"; };
+		2D4019471F6B850E005AEA0F /* ArrayTem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTem.hpp; sourceTree = "<group>"; };
+		2D4019491F6BA78F005AEA0F /* StaticArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticArray.cpp; sourceTree = "<group>"; };
+		2D40194A1F6BA78F005AEA0F /* StaticArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticArray.hpp; sourceTree = "<group>"; };
+		2D40194C1F6BB4CF005AEA0F /* Storage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Storage.cpp; sourceTree = "<group>"; };
+		2D40194D1F6BB4CF005AEA0F /* Storage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Storage.hpp; sourceTree = "<group>"; };
 		2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TypecastsOverloading.cpp; sourceTree = "<group>"; };
 		2DB0D8FB1F59433C000A8779 /* TypecastsOverloading.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TypecastsOverloading.hpp; sourceTree = "<group>"; };
 		2DF34DE71F429A0E003237BF /* split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = split.cpp; sourceTree = "<group>"; };
@@ -105,6 +117,14 @@
 				2D0C7C661F592A7E0041BB00 /* ParenthesisOverloading.hpp */,
 				2DB0D8FA1F59433C000A8779 /* TypecastsOverloading.cpp */,
 				2DB0D8FB1F59433C000A8779 /* TypecastsOverloading.hpp */,
+				2D4019431F6B7B76005AEA0F /* Cents.cpp */,
+				2D4019441F6B7B76005AEA0F /* Cents.hpp */,
+				2D4019461F6B850E005AEA0F /* ArrayTem.cpp */,
+				2D4019471F6B850E005AEA0F /* ArrayTem.hpp */,
+				2D4019491F6BA78F005AEA0F /* StaticArray.cpp */,
+				2D40194A1F6BA78F005AEA0F /* StaticArray.hpp */,
+				2D40194C1F6BB4CF005AEA0F /* Storage.cpp */,
+				2D40194D1F6BB4CF005AEA0F /* Storage.hpp */,
 			);
 			path = DemoCPuse;
 			sourceTree = "<group>";
@@ -167,12 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D40194B1F6BA78F005AEA0F /* StaticArray.cpp in Sources */,
+				2D40194E1F6BB4CF005AEA0F /* Storage.cpp in Sources */,
 				2DF34DE91F429A0E003237BF /* split.cpp in Sources */,
 				D0726F9D1F584D64004D5E3E /* IncreDecreOverload.cpp in Sources */,
+				2D4019481F6B850E005AEA0F /* ArrayTem.cpp in Sources */,
 				2D0C7C671F592A7E0041BB00 /* ParenthesisOverloading.cpp in Sources */,
 				2D0560ED1F3C57C30017D5A3 /* Student_info.cpp in Sources */,
 				2D0560EE1F3C57C30017D5A3 /* median.cpp in Sources */,
 				2D06D89E1F55672A00251011 /* Date.cpp in Sources */,
+				2D4019451F6B7B76005AEA0F /* Cents.cpp in Sources */,
 				D0726FA01F5857A8004D5E3E /* SubscripOverloading.cpp in Sources */,
 				2DB0D8FC1F59433C000A8779 /* TypecastsOverloading.cpp in Sources */,
 				2D0560EF1F3C57C30017D5A3 /* grade.cpp in Sources */,

@@ -8,6 +8,10 @@
 
 #include <iostream>
 #include <string>
+#include "Cents.hpp"
+#include "ArrayTem.hpp"
+#include "StaticArray.hpp"
+#include "Storage.hpp"
 
 template <typename T>
 const T& maxs(const T& x, const T& y){
@@ -34,6 +38,50 @@ class Derives: public Base{
 };
 
 int main() {
+	
+	Storage8<int> intStorage;
+	for (int count = 0; count < 8; ++count) {
+		intStorage.set(count, count);
+	}
+	for (int count = 0; count < 8; ++count) {
+		std::cout << intStorage.get(count) << '\n';
+	}
+	
+	Storage8<bool> boolStorage;
+	for (int count = 0; count < 8; ++count) {
+		boolStorage.set(count, count & 3);
+	}
+	
+	for (int count = 0 ; count < 8; ++count) {
+		std::cout << (boolStorage.get(count) ? "true" : "false") << '\n';
+	}
+	
+	StaticArray<int, 12> intstArray;
+	
+	for (int count = 0; count < 12; ++count) {
+		intstArray[count] = count;
+	}
+	
+	for (int count = 11; count >= 0; --count) {
+		std::cout << intstArray[count] << '\n';
+	}
+	
+	 std::cout << '\n';
+	
+	ArrayTem<int> intArray(12);
+	ArrayTem<double> doubleArray(12);
+	
+	for (int count = 0; count < intArray.getLength(); ++count) {
+		intArray[count] = count;
+		doubleArray[count] = count + 0.5;
+	}
+	
+	for (int count = intArray.getLength() - 1; count >= 0; --count) {
+		std::cout << intArray[count] << '\t' << doubleArray[count] << '\n';
+	}
+	
+	Cents array3[]{Cents(5), Cents(10), Cents(15), Cents(14)};
+	std::cout << average(array3, 4) << '\n';
 	
 	int array1[]{5, 2, 1, 4, 3};
 	std::cout << average(array1, 5) << '\n';
