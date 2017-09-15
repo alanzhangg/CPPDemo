@@ -8,60 +8,53 @@
 
 #include <iostream>
 #include <string>
-#include "IncreDecreOverload.hpp"
-#include "SubscripOverloading.hpp"
-#include "ParenthesisOverloading.hpp"
 
-class Car{
-private:
-	std::string m_make;
-	std::string m_model;
-public:
-	Car(std::string make, std::string model) : m_make(make), m_model(model){
+template <typename T>
+const T& maxs(const T& x, const T& y){
+	return (x > y) ? x : y;
+}
+
+template <class T>
+T average(T * array, int length){
+	T sum = 0;
+	for (int count = 0; count < length; ++count) {
+		sum += array[count];
 	}
-	friend bool operator==(const Car &c1, const Car &c2);
-	friend bool operator!=(const Car &c1, const Car &c2);
+	sum /= length;
+	return sum;
+}
+
+class Base{
+public:
+	virtual const char* getName() {return "Base";}
 };
 
-bool operator==(const Car &c1, const Car &c2){
-	return (c1.m_make == c2.m_make && c1.m_model == c2.m_model);
+class Derives: public Base{
+	virtual const char* getName() {return "Derived";}
+};
+
+int main() {
+	
+	int array1[]{5, 2, 1, 4, 3};
+	std::cout << average(array1, 5) << '\n';
+	
+	double array2[]{3.12, 3.45, 9.23, 6.34};
+	std::cout << average(array2, 4) << '\n';
+	
+	int i = maxs(3, 7);
+	std::cout << i << '\n';
+	
+	double d = maxs(6.34, 18.523);
+	std::cout << d << '\n';
+	
+	char ch = maxs('a', '6');
+	std::cout << ch << '\n';
+	
+	Derives derived;
+	Base &base = derived;
+	std::cout << "Base is a" << base.getName() << '\n';
+	
+	return 0;
 }
 
-bool operator!=(const Car &c1, const Car &c2){
-	return !(c1 == c2);
-}
 
-int main(){
-    Digit digit(8);
-    
-    std::cout << digit;
-    std::cout << ++digit; // calls Digit::operator++();
-    std::cout << digit++; // calls Digit::operator++(int);
-    std::cout << digit;
-    std::cout << --digit; // calls Digit::operator--();
-    std::cout << digit--; // calls Digit::operator--(int);
-    std::cout << digit;
-	
-	std::cout << std::endl;
-	
-	IntList list;
-	list[2] = 3;
-	std::cout << list[2];
-	const IntList clist;
-	std::cout << clist[2];
-	
-	IntList * lists = new IntList;
-	(*lists)[2] = 3;
-	std::cout << (*lists)[2] << '\n';
-	delete lists;
-	
-	std::cout << "\n";
-	
-	Matrix matrix(1);
-	matrix(1, 2) = 4.5;
-	matrix();
-	std::cout << matrix(1, 2) << '\n';
-
-	std::cout << std::endl;
-    return 0;
-}
