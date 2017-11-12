@@ -13,9 +13,9 @@
 #include <vector>
 #include <iostream>
 
-bool less(int v, int w);
 void exch(std::vector<int>  &a, int i, int j);
 void show(std::vector<int> a);
 bool isSorted(std::vector<int> a);
+bool lesss(int v, int w);
 
 #endif /* CommonFunc_hpp */

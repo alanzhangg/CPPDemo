@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D001FCE71FB7D8BA000BA414 /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001FCE51FB7D8BA000BA414 /* MergeSort.cpp */; };
 		D04C01A21FAEB16A0058C9D5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D04C01A11FAEB16A0058C9D5 /* main.cpp */; };
 		D04C01AA1FAEC1460058C9D5 /* CommonFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D04C01A81FAEC1460058C9D5 /* CommonFunc.cpp */; };
 		D04C01AD1FAED48E0058C9D5 /* Algorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D04C01AB1FAED48E0058C9D5 /* Algorithm.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D001FCE51FB7D8BA000BA414 /* MergeSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
+		D001FCE61FB7D8BA000BA414 /* MergeSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MergeSort.hpp; sourceTree = "<group>"; };
 		D04C019E1FAEB1690058C9D5 /* AlorithmLearn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlorithmLearn; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04C01A11FAEB16A0058C9D5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D04C01A81FAEC1460058C9D5 /* CommonFunc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommonFunc.cpp; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				D04C01A11FAEB16A0058C9D5 /* main.cpp */,
 				D04C01AB1FAED48E0058C9D5 /* Algorithm.cpp */,
 				D04C01AC1FAED48E0058C9D5 /* Algorithm.hpp */,
+				D001FCE51FB7D8BA000BA414 /* MergeSort.cpp */,
+				D001FCE61FB7D8BA000BA414 /* MergeSort.hpp */,
 				D04C01A81FAEC1460058C9D5 /* CommonFunc.cpp */,
 				D04C01A91FAEC1460058C9D5 /* CommonFunc.hpp */,
 			);
@@ -131,6 +136,7 @@
 			files = (
 				D04C01AA1FAEC1460058C9D5 /* CommonFunc.cpp in Sources */,
 				D04C01AD1FAED48E0058C9D5 /* Algorithm.cpp in Sources */,
+				D001FCE71FB7D8BA000BA414 /* MergeSort.cpp in Sources */,
 				D04C01A21FAEB16A0058C9D5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

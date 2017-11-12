@@ -15,5 +15,7 @@
 void selectSort(std::vector<int> &a);
 void insertionSort(std::vector<int> &a);
 void shellSort(std::vector<int> &a);
+void mergeSort(std::vector<int> &a, int lo, int hi);
+void merge(std::vector<int> &a, int lo, int mid, int hi);
 
 #endif /* Algorithm_hpp */

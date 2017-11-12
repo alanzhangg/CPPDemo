@@ -8,7 +8,7 @@
 
 #include "CommonFunc.hpp"
 
-bool less(int v, int w){
+bool lesss(int v, int w){
     return v < w;
 }
 
@@ -27,7 +27,7 @@ void show(std::vector<int> a){
 
 bool isSorted(std::vector<int> a){
     for (int i = 0; i < a.size(); i++) {
-        if (less(a[i], a[i - 1])) {
+        if (lesss(a[i], a[i - 1])) {
             return false;
         }
     }
