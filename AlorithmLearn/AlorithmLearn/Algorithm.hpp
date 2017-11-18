@@ -17,5 +17,6 @@ void insertionSort(std::vector<int> &a);
 void shellSort(std::vector<int> &a);
 void mergeSort(std::vector<int> &a, int lo, int hi);
 void merge(std::vector<int> &a, int lo, int mid, int hi);
+void quickSort(std::vector<int> &a);
 
 #endif /* Algorithm_hpp */

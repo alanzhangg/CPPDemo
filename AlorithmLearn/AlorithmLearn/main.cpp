@@ -21,9 +21,10 @@ int main(int argc, const char * argv[]) {
 //    shellSort(sor);
 //    int high = (int)sor.size() - 1;
 //    mergeSort(sor, 0, high);
-    Merge m = Merge();
+//    Merge m = Merge();
 //    m.sort(sor);
-    m.diSort(sor);
+//    m.diSort(sor);
+    quickSort(sor);
     show(sor);
     std::cout << "Hello, World!\n";
     return 0;
