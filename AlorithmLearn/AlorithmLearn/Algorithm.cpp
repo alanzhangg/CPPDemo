@@ -121,4 +121,27 @@ void selectSort(std::vector<int> &a){
     }
 }
 
+//堆排序
+
+void sink(std::vector<int> &a, int k, int N){
+    while (2 * k <= N) {
+        int j = 2 * k;
+        if (j < N && lesss(a[j], a[j+1])) j++;
+        if (!lesss(a[k], a[j])) break;
+        exch(a, k, j);
+        k = j;
+    }
+}
+
+void heapSort(std::vector<int> &a){
+    int N = (int)a.size() - 1;
+    for (int k = N / 2; k >= 1; k--) {
+        sink(a, k, N);
+    }
+    while (N >= 1) {
+        exch(a, 1, N--);
+        sink(a, 1, N);
+    }
+}
+
 
